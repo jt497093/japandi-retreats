@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dates & availability | Japandi Lounge Retreats</title>
+  <meta name="description" content="Upcoming 3-day silent retreat dates at Japandi Lounge." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Japandi Lounge Retreats</span>
+        </a>
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Photo gallery</a>
+          <a class="active" href="dates.html">Dates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h1 class="h1" style="margin:0 0 6px">Dates & availability</h1>
+          <p class="lead" style="margin:0">Reserve your place, or request a private group edition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="container">
+        <table class="table" aria-label="Workshop dates">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Edition notes</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="workshopRows"></tbody>
+        </table>
+
+        <div class="section" style="padding-bottom:0">
+          <div class="split">
+            <div class="card">
+              <h3>Private group retreat</h3>
+              <p class="small">Want to bring your own team/friends group? We can schedule a private 3‑day edition.</p>
+              <div class="ctaRow" style="margin-top:12px">
+                <a class="btn primary" href="contact.html">Request a date</a>
+                <a class="btn" href="gallery.html">See the house</a>
+              </div>
+            </div>
+            <div class="card">
+              <h3>What you’ll need</h3>
+              <ul class="list">
+                <li>Comfortable clothes for yoga + breathwork</li>
+                <li>Warm layers for quiet outdoor time</li>
+                <li>A notebook (for journaling)</li>
+                <li>Willingness to fully unplug</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="small">© <span id="y"></span> Japandi Lounge Retreats</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/dates.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

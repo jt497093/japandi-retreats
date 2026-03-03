@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo gallery | Japandi Lounge Retreats</title>
+  <meta name="description" content="A quick impression of Japandi Lounge — calm interiors, natural textures and cozy spaces." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Japandi Lounge Retreats</span>
+        </a>
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a class="active" href="gallery.html">Photo gallery</a>
+          <a href="dates.html">Dates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h1 class="h1" style="margin:0 0 6px">Photo gallery</h1>
+          <p class="lead" style="margin:0">A calm, nature-led house — made for slowing down.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="container">
+        <div class="gallery">
+          <a class="g1" href="assets/img/cover.jpeg" target="_blank" rel="noopener">
+            <img src="assets/img/cover.jpeg" alt="Japandi Lounge living room" loading="lazy" />
+          </a>
+          <a class="g2" href="assets/img/hall-sofa.jpeg" target="_blank" rel="noopener">
+            <img src="assets/img/hall-sofa.jpeg" alt="Reading corner" loading="lazy" />
+          </a>
+          <a class="g3" href="assets/img/fireplace.jpeg" target="_blank" rel="noopener">
+            <img src="assets/img/fireplace.jpeg" alt="Fireplace details" loading="lazy" />
+          </a>
+          <a class="g4" href="assets/img/livingroom-study.jpeg" target="_blank" rel="noopener">
+            <img src="assets/img/livingroom-study.jpeg" alt="Calm study corner" loading="lazy" />
+          </a>
+          <a class="g5" href="assets/img/pizza-oven-lounge.jpeg" target="_blank" rel="noopener">
+            <img src="assets/img/pizza-oven-lounge.jpeg" alt="Outdoor lounge" loading="lazy" />
+          </a>
+        </div>
+        <p class="small" style="margin-top:12px">Tip: replace images in <code>assets/img</code> with your latest photos (same filenames) to refresh the gallery instantly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="small">© <span id="y"></span> Japandi Lounge Retreats</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
