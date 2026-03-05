@@ -1,161 +1,393 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>3-Day Silent Retreat | Japandi Lounge</title>
-  <meta name="description" content="A 3-day silent retreat in nature with digital detox, breathwork, yoga and spiritual guidance — hosted at Japandi Lounge near Den Bosch." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>3 Day Silent Retreat | Japandi Lounge</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#F4F2ED;
+color:#2F2F2F;
+line-height:1.6;
+}
+
+header{
+background:#F4F2ED;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#2F2F2F;
+font-weight:500;
+}
+
+.hero{
+height:80vh;
+background-image:url("images/hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-box{
+background:rgba(255,255,255,0.85);
+padding:40px;
+max-width:700px;
+border-radius:8px;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.highlights{
+margin:20px 0;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+margin:20px 0;
+}
+
+button{
+background:#8FA68E;
+border:none;
+padding:14px 26px;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:4px;
+margin:5px;
+}
+
+section{
+padding:70px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:30px;
+}
+
+.feature-box{
+background:#fff;
+padding:25px;
+border-radius:6px;
+}
+
+.schedule{
+background:#D9D4CC;
+padding:50px;
+border-radius:8px;
+}
+
+.footer{
+background:#2F2F2F;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
 </head>
+
+
 <body>
-  <header class="topbar">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html" aria-label="Home">
-          <span class="dot" aria-hidden="true"></span>
-          <span>Japandi Lounge Retreats</span>
-        </a>
-        <div class="navlinks">
-          <a class="active" href="index.html">Home</a>
-          <a href="gallery.html">Photo gallery</a>
-          <a href="dates.html">Dates</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="heroGrid">
-          <div class="heroCard heroMedia" role="img" aria-label="Japandi Lounge interior"></div>
-          <div class="heroCard">
-            <div class="heroContent">
-              <div class="kicker">
-                <span class="pill">Nature</span>
-                <span class="pill">Silence</span>
-                <span class="pill">Digital detox</span>
-              </div>
-              <h1 class="h1">3-day silent retreat</h1>
-              <p class="lead">
-                Three days of calm, clarity, and deep reset — held in noble silence, with guided breathwork, yoga and spiritual mentoring.
-                No scrolling. No noise. Just space.
-              </p>
+<header>
+<div><strong>Japandi Lounge Retreat</strong></div>
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="dates.html">Dates</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-              <div class="price">
-                <strong>€938</strong>
-                <span>per person · 3 days · hosted at Japandi Lounge (10 min from Den Bosch)</span>
-              </div>
 
-              <div class="ctaRow">
-                <a class="btn primary" href="dates.html">See available dates</a>
-                <a class="btn" href="contact.html">Ask a question</a>
-                <a class="btn ghost" href="gallery.html">View the house</a>
-              </div>
+<div class="hero">
 
-              <p class="small" style="margin-top:14px">
-                You’ll have access to all Japandi Lounge facilities throughout the retreat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="hero-box">
 
-    <section class="section">
-      <div class="container">
-        <div class="grid3">
-          <div class="card">
-            <h3>Silence + digital detox</h3>
-            <p>3 days of silence to quiet the mind. Phones off. No social media, news, or distractions.</p>
-          </div>
-          <div class="card">
-            <h3>Guest mentors</h3>
-            <p>Guided breathwork, yoga, meditation and grounded spiritual guidance — for beginners and experienced practitioners.</p>
-          </div>
-          <div class="card">
-            <h3>Luxury group accommodation</h3>
-            <p>Stay in a restored farmhouse with a calm Japandi atmosphere designed to slow you down.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<div style="font-size:14px;letter-spacing:1px;">ONLY 8 PLACES AVAILABLE PER RETREAT</div>
 
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="card">
-            <h3>What’s included</h3>
-            <ul class="list">
-              <li>3 days of silence + simple structure to support depth</li>
-              <li>Daily breathwork session (guided)</li>
-              <li>Daily yoga (mix of grounding + yin)</li>
-              <li>Meditation, reflection prompts, and spiritual mentoring</li>
-              <li>Use of all Japandi Lounge facilities (sauna, wood-fired jacuzzi, pizza oven, fire pit, etc.)</li>
-              <li>Small, intimate group setting</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Why Japandi Lounge works for silence</h3>
-            <p>
-              Most retreats rent functional retreat centres.
-              This one is held in a home that already feels like a retreat — natural materials, soft tones, generous space and a countryside setting.
-            </p>
-            <ul class="list">
-              <li>Calm “Japandi” atmosphere (minimal + warm)</li>
-              <li>Indoor/outdoor spaces to be together without crowding</li>
-              <li>Easy access: 10 minutes from Den Bosch</li>
-              <li>Luxury facilities that support deep recovery</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+<h1>3 Days of Silence<br>Nature & Spa</h1>
 
-    <section class="section">
-      <div class="container">
-        <div class="card">
-          <h3>Example daily rhythm</h3>
-          <p class="small">(Exact schedule may vary per edition.)</p>
-          <ul class="list">
-            <li><strong>Morning:</strong> silent tea + gentle yoga + meditation</li>
-            <li><strong>Late morning:</strong> breathwork + integration time</li>
-            <li><strong>Afternoon:</strong> nature walk / rest / sauna / journaling</li>
-            <li><strong>Evening:</strong> yin yoga + closing circle (in silence)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<div class="subtitle">
+Luxury silent retreat with breathwork, yoga and meditation
+</div>
 
-    <section class="section">
-      <div class="container">
-        <div class="card">
-          <h3>Ready to join?</h3>
-          <p class="lead" style="margin:8px 0 14px;">Pick a date or message us to request a private group retreat.</p>
-          <div class="ctaRow">
-            <a class="btn primary" href="dates.html">Dates + availability</a>
-            <a class="btn" href="contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="highlights">
 
-  </main>
+Digital detox • Breathwork • Yoga • Meditation<br>
+Private rooms • Nature • Sauna & Spa
 
-  <footer class="footer">
-    <div class="container">
-      <div class="small">
-        © <span id="y"></span> Japandi Lounge Retreats · Countryside stay near ’s‑Hertogenbosch (Den Bosch)
-      </div>
-      <div class="small" style="margin-top:6px">
-        This is a static site you can deploy on GitHub Pages. Edit dates in <code>assets/js/dates.js</code>.
-      </div>
-    </div>
-  </footer>
+</div>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+<div class="price">
+€938 per person
+</div>
+
+<button onclick="location.href='dates.html'">
+View Retreat Dates
+</button>
+
+<button onclick="location.href='contact.html'">
+Reserve Your Place
+</button>
+
+</div>
+
+</div>
+
+
+<section>
+
+<h2>A Luxury Silent Retreat</h2>
+
+<p>
+Step away from the noise of daily life and experience three days of silence in nature.
+</p>
+
+<p>
+This intimate retreat takes place at <strong>Japandi Lounge</strong>, a serene countryside residence designed around calm, simplicity and natural materials.
+</p>
+
+<p>
+Unlike most retreats, this experience is intentionally small and comfortable.
+Only <strong>8 guests</strong> participate in each retreat.
+</p>
+
+<p>
+Every participant enjoys a <strong>private double room</strong> and access to the full Japandi Lounge facilities.
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>What Makes This Retreat Different</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<strong>Private Accommodation</strong><br>
+8 private double rooms. No dormitories or shared sleeping spaces.
+</div>
+
+<div class="feature-box">
+<strong>Luxury Retreat Environment</strong><br>
+A beautifully designed Japandi interior surrounded by nature.
+</div>
+
+<div class="feature-box">
+<strong>Breathwork & Yoga</strong><br>
+Guest mentors guide sessions that help reset the nervous system.
+</div>
+
+<div class="feature-box">
+<strong>Spa & Nature</strong><br>
+Sauna, hot tub, garden spaces and peaceful countryside surroundings.
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>A True Digital Detox</h2>
+
+<p>
+For the full duration of the retreat all participants disconnect from phones and digital devices.
+</p>
+
+<p>
+This digital detox allows your mind to slow down and your attention to return to the present moment.
+</p>
+
+<p>
+Many guests find that just three days without screens dramatically improves clarity, focus and sleep.
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>The Experience</h2>
+
+<p>
+During the retreat you are guided through a calm rhythm of practices designed to support stillness and reflection.
+</p>
+
+<ul>
+
+<li>Breathwork sessions</li>
+<li>Gentle yoga</li>
+<li>Silent meditation</li>
+<li>Nature walks</li>
+<li>Integration and reflection</li>
+
+</ul>
+
+<p>
+Silence begins on arrival and continues until the closing session on the final day.
+</p>
+
+</section>
+
+
+
+<section class="schedule">
+
+<h2>Example Retreat Flow</h2>
+
+<p>
+
+<strong>Day 1</strong><br>
+Arrival 15:00<br>
+Opening circle<br>
+Breathwork session<br>
+Silent dinner<br>
+Evening meditation
+
+</p>
+
+<p>
+
+<strong>Day 2</strong><br>
+Morning meditation<br>
+Yoga session<br>
+Silent breakfast<br>
+Nature walk<br>
+Breathwork workshop<br>
+Spa and reflection time
+
+</p>
+
+<p>
+
+<strong>Day 3</strong><br>
+Morning meditation<br>
+Gentle yoga<br>
+Closing integration circle<br>
+Departure 12:00
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>Facilities at Japandi Lounge</h2>
+
+<ul>
+
+<li>Sauna</li>
+<li>Outdoor hot tub</li>
+<li>Large nature garden</li>
+<li>Firepit area</li>
+<li>Spacious meditation rooms</li>
+<li>Luxury communal kitchen</li>
+
+</ul>
+
+</section>
+
+
+
+<section>
+
+<h2>Price & Availability</h2>
+
+<p>
+
+<strong>€938 per person</strong>
+
+</p>
+
+<p>
+
+Includes:
+
+</p>
+
+<ul>
+
+<li>3 day silent retreat program</li>
+<li>Private double room</li>
+<li>Breathwork sessions</li>
+<li>Yoga sessions</li>
+<li>Meditation guidance</li>
+<li>Full use of spa and facilities</li>
+
+</ul>
+
+<p>
+
+Each retreat is limited to <strong>8 participants</strong>.
+
+</p>
+
+<p>
+
+Once the retreat fills, we maintain a <strong>reserve list for 2 additional guests</strong> in case places become available.
+
+</p>
+
+<button onclick="location.href='dates.html'">
+View Retreat Dates
+</button>
+
+</section>
+
+
+
+<div class="footer">
+
+Japandi Lounge Silent Retreat<br>
+Digital Detox • Breathwork • Yoga • Meditation
+
+</div>
+
+
 </body>
 </html>
