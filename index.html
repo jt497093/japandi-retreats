@@ -361,6 +361,18 @@
       background: rgba(223, 198, 168, 0.14);
     }
 
+    .retreatRow {
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .retreatRow:hover {
+        transform: translateY(-1px);
+      }
+    }
+
     .date {
       font-size: 15px;
       font-weight: 600;
@@ -399,6 +411,20 @@
 
       font-size: 12px;
       white-space: nowrap;
+    }
+
+
+    .retreatDetailNote {
+      margin: 16px 4px 0;
+      max-width: 760px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .retreatDetailNote a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
 
@@ -513,18 +539,6 @@
         transform 0.22s ease,
         border-color 0.22s ease,
         box-shadow 0.22s ease;
-    }
-
-    .number {
-      display: block;
-
-      margin-bottom: 26px;
-
-      color: var(--muted);
-
-      font-size: 12px;
-
-      letter-spacing: 2px;
     }
 
     @media (hover: hover) and (pointer: fine) {
@@ -846,8 +860,16 @@
 
       <div class="navlinks">
 
-        <a href="/">
-          Home
+        <a href="#dates">
+          Retreats
+        </a>
+
+        <a href="#information">
+          Information
+        </a>
+
+        <a href="#locations">
+          Locations
         </a>
 
         <a href="#faq">
@@ -943,7 +965,7 @@
         </h2>
 
         <p>
-          Small groups, space to recover and enough time to properly
+          Small groups, carefully chosen locations and enough time to properly
           step away from everyday routines.
         </p>
 
@@ -952,13 +974,11 @@
 
       <div class="card datesCard">
 
-
         <!-- RETREAT 1 -->
-
         <div class="retreatRow">
 
           <div class="date">
-            11–14 December 26
+            11–14 December 2026
           </div>
 
           <div class="retreatName">
@@ -970,7 +990,7 @@
           </div>
 
           <div class="retreatMeta duration">
-            3 days
+            3 nights / 4 days
           </div>
 
           <div class="retreatPrice">
@@ -987,11 +1007,10 @@
 
 
         <!-- RETREAT 2 -->
-
         <div class="retreatRow">
 
           <div class="date">
-            TBC
+            12–15 February 2027
           </div>
 
           <div class="retreatName">
@@ -1003,7 +1022,7 @@
           </div>
 
           <div class="retreatMeta duration">
-            3 days
+            3 nights / 4 days
           </div>
 
           <div class="retreatPrice">
@@ -1020,11 +1039,42 @@
 
 
         <!-- RETREAT 3 -->
-
         <div class="retreatRow">
 
           <div class="date">
-            TBC
+            19–22 March 2027
+          </div>
+
+          <div class="retreatName">
+            Intensive Recovery Retreat
+          </div>
+
+          <div class="retreatMeta">
+            Japandi Lounge
+          </div>
+
+          <div class="retreatMeta duration">
+            3 nights / 4 days
+          </div>
+
+          <div class="retreatPrice">
+            €975
+          </div>
+
+          <div>
+            <span class="availability">
+              10/10 available
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- RETREAT 4 -->
+        <div class="retreatRow">
+
+          <div class="date">
+            6–10 June 2027
           </div>
 
           <div class="retreatName">
@@ -1032,11 +1082,11 @@
           </div>
 
           <div class="retreatMeta">
-            TBC
+            Northumberland, UK
           </div>
 
           <div class="retreatMeta duration">
-            5 days
+            4 nights / 5 days
           </div>
 
           <div class="retreatPrice">
@@ -1051,46 +1101,16 @@
 
         </div>
 
-
-        <!-- RETREAT 4 -->
-
-        <div class="retreatRow">
-
-          <div class="date">
-            TBC
-          </div>
-
-          <div class="retreatName">
-            Intensive Recovery Retreat
-          </div>
-
-          <div class="retreatMeta">
-            Northumberland, UK
-          </div>
-
-          <div class="retreatMeta duration">
-            3 days
-          </div>
-
-          <div class="retreatPrice">
-            TBC
-          </div>
-
-          <div>
-            <span class="availability">
-              10/10 available
-            </span>
-          </div>
-
-        </div>
-
-
       </div>
+
+      <p class="retreatDetailNote">
+        See <a href="#information"><strong>Information</strong></a> for a full programme,
+        accommodation details and introductions to the hosts leading that retreat.
+      </p>
 
     </div>
 
   </section>
-
 
   <!-- WHAT TO EXPECT -->
 
@@ -1150,7 +1170,9 @@
 
   <!-- EXPERIENCES -->
 
-  <section class="section">
+  <section
+    id="information"
+    class="section">
 
     <div class="container">
 
@@ -1166,7 +1188,7 @@
 
         <p>
           Retreat programmes can combine guided sessions with quiet time,
-          shared meals and use of the house and wellness facilities.
+          shared meals, nature and use of the facilities available at each location.
         </p>
 
       </div>
@@ -1176,12 +1198,7 @@
 
 
         <div class="card experience">
-
-          <span class="number">
-            01
-          </span>
-
-          <h3>
+<h3>
             Breathwork
           </h3>
 
@@ -1194,18 +1211,26 @@
 
 
         <div class="card experience">
-
-          <span class="number">
-            02
-          </span>
-
-          <h3>
+<h3>
             Ice-bath sessions
           </h3>
 
           <p>
-            Guided cold exposure in the peaceful outdoor setting
-            of Japandi Lounge.
+            Guided cold exposure adapted to the retreat setting,
+            with space to build confidence and recover afterwards.
+          </p>
+
+        </div>
+
+
+        <div class="card experience">
+<h3>
+            Sound healing
+          </h3>
+
+          <p>
+            Slow down and settle into a quieter state with
+            sound-based relaxation sessions.
           </p>
 
         </div>
@@ -1213,17 +1238,42 @@
 
         <div class="card experience">
 
-          <span class="number">
-            03
-          </span>
-
           <h3>
-            Sound healing
+            Yoga
           </h3>
 
           <p>
-            Slow down and settle into a quieter state with
-            sound-based relaxation sessions.
+            Guided movement and stretching designed to support mobility,
+            body awareness and a calmer physical state.
+          </p>
+
+        </div>
+
+
+        <div class="card experience">
+
+          <h3>
+            Meditation
+          </h3>
+
+          <p>
+            Guided and quiet meditation sessions creating space for
+            reflection, mental clarity and deeper awareness.
+          </p>
+
+        </div>
+
+
+        <div class="card experience">
+
+          <h3>
+            Plant medicine
+          </h3>
+
+          <p>
+            Selected retreats may include carefully facilitated plant-medicine
+            practices where appropriate and permitted, as part of a wider
+            programme focused on reflection, wellbeing and personal insight.
           </p>
 
         </div>
@@ -1236,9 +1286,11 @@
   </section>
 
 
-  <!-- THE LOCATION / ACCOMMODATION -->
+  <!-- LOCATIONS -->
 
-  <section class="section">
+  <section
+    id="locations"
+    class="section">
 
     <div class="container">
 
@@ -1247,28 +1299,31 @@
         <div class="card">
 
           <span class="sectionLabel">
-            The stay
+            Locations
           </span>
 
           <h2>
-            Retreats at Japandi Lounge
+            Places chosen for the retreat
           </h2>
 
           <p>
-            The retreat experience continues between sessions.
-            Japandi Lounge offers indoor and outdoor spaces designed
-            for slowing down, recovery and connection.
+            Japandi Retreats is not tied to one property. Each location is chosen
+            for its atmosphere, access to nature and ability to give the group
+            enough distance from everyday routines.
+          </p>
+
+          <p>
+            Our first retreats take place at Japandi Lounge in the countryside
+            near Den Bosch, with additional retreats planned in locations
+            including Northumberland in the UK.
           </p>
 
           <ul class="list">
-            <li>Sauna</li>
-            <li>Wood-fired hot tub / jacuzzi</li>
-            <li>Outdoor fire pit</li>
-            <li>2 outdoor BBQs</li>
-            <li>Large communal kitchen</li>
-            <li>Long dining table for shared meals</li>
-            <li>Indoor and outdoor lounge areas</li>
-            <li>Peaceful countryside near Den Bosch</li>
+            <li>Peaceful natural surroundings</li>
+            <li>Comfortable group accommodation</li>
+            <li>Space for guided sessions and quiet time</li>
+            <li>Shared areas for meals and connection</li>
+            <li>Wellness facilities where appropriate to the programme</li>
           </ul>
 
         </div>
@@ -1452,7 +1507,7 @@
           <summary>How do I reserve a place on an upcoming retreat?</summary>
           <div class="faqAnswer">
             <p>
-              Contact Japandi Lounge through WhatsApp and mention the retreat you are interested in. We will confirm availability, pricing and the next steps for reserving your place.
+              Contact Japandi Retreats through WhatsApp and mention the retreat you are interested in. We will confirm availability, pricing and the next steps for reserving your place.
             </p>
           </div>
         </details>
@@ -1482,7 +1537,7 @@
 
         <p>
           Questions about a retreat, availability or whether a particular
-          weekend is right for you? Contact us directly.
+          programme is right for you? Contact us directly.
         </p>
 
         <div class="ctaRow">
