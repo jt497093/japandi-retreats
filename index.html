@@ -567,6 +567,101 @@
     }
 
 
+
+    /* RETREAT REVIEWS */
+
+    .reviewsHeader {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .reviewsHeader .sectionIntro {
+      margin-bottom: 0;
+    }
+
+    .reviewTrust {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(223, 198, 168, 0.28);
+      color: var(--text);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .reviewsGrid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .reviewCard {
+      min-height: 290px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+    }
+
+    .reviewStars {
+      margin-bottom: 18px;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--text);
+    }
+
+    .reviewQuote {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .reviewMeta {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .reviewName {
+      display: block;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .reviewDate {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .reviewCard:hover {
+        transform: translateY(-2px);
+        border-color: rgba(29, 29, 27, 0.24);
+        box-shadow: 0 20px 48px rgba(40, 30, 20, 0.11);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .reviewsGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     /* FAQ */
 
     .faqList {
@@ -1112,54 +1207,133 @@
 
   </section>
 
-  <!-- WHAT TO EXPECT -->
 
-  <section class="section">
+
+
+  <!-- RETREAT REVIEWS -->
+
+  <section
+    id="reviews"
+    class="section">
 
     <div class="container">
 
-      <div class="split">
+      <div class="reviewsHeader">
 
-        <div class="card">
+        <div class="sectionIntro">
 
           <span class="sectionLabel">
-            What to expect
+            Retreat reviews
           </span>
 
           <h2>
-            Space to properly recover
+            What guests say
           </h2>
 
           <p>
-            Our retreats take place in inspiring locations surrounded by nature,
-            chosen to create space for rest, reflection and meaningful connection.
-          </p>
-
-          <p>
-            The aim is simple: create enough distance from daily routines
-            to slow down, recover and return with more energy and clarity.
+            Real experiences from people who joined us to slow down,
+            reset and reconnect.
           </p>
 
         </div>
 
-
-        <div class="gallery">
-
-          <div class="img">
-            <img
-              src="images/JL_GardenSaunaEve.jpeg"
-              alt="Outdoor sauna at Japandi Lounge in the evening"
-              loading="lazy">
-          </div>
-
-          <div class="img">
-            <img
-              src="images/JL_LivingroomStudy.jpeg"
-              alt="Japandi-style study and living area at Japandi Lounge"
-              loading="lazy">
-          </div>
-
+        <div class="reviewTrust">
+          Retreat experiences
         </div>
+
+      </div>
+
+      <div class="reviewsGrid">
+
+        <article class="card reviewCard">
+
+          <div>
+
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “The whole experience exceeded my expectations. The combination of breathwork and the ice bath was intense, energising and incredibly well guided. Mike has a special presence about him. His guidance felt professional and reassuring, but also relaxed and entertaining, which made it much easier to fully commit to the experience. I left feeling stronger, clearer and genuinely inspired.”
+            </p>
+
+          </div>
+
+          <div class="reviewMeta">
+
+            <span class="reviewName">
+              Max
+            </span>
+
+            <span class="reviewDate">
+              Bergen, Norway
+            </span>
+
+          </div>
+
+        </article>
+
+        <article class="card reviewCard">
+
+          <div>
+
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “The location just outside Den Bosch is absolutely beautiful. Surrounded by green countryside, birdsong and a real sense of tranquillity, it was the perfect place to disconnect from everyday life. The facilities were fantastic and everything felt comfortable and thoughtfully prepared. The retreat itself was amazing. I left having learned more about myself, feeling recharged, powerful and ready to take that energy back into everyday life.”
+            </p>
+
+          </div>
+
+          <div class="reviewMeta">
+
+            <span class="reviewName">
+              Becky
+            </span>
+
+            <span class="reviewDate">
+              Newcastle, UK
+            </span>
+
+          </div>
+
+        </article>
+
+        <article class="card reviewCard">
+
+          <div>
+
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “An amazing location, amazing hosts and an experience I won’t forget. The sound healing session was something else. The combination of live music, singing, sound, vibration and stillness created a level of relaxation I had never experienced before. At some point I completely lost track of time and felt as though my whole body had switched off from the outside world. It was deeply calming, emotional in the best way, and one of the highlights of the retreat.”
+            </p>
+
+          </div>
+
+          <div class="reviewMeta">
+
+            <span class="reviewName">
+              Lieke
+            </span>
+
+            <span class="reviewDate">
+              Den Bosch, Netherlands
+            </span>
+
+          </div>
+
+        </article>
 
       </div>
 
@@ -1278,6 +1452,62 @@
 
         </div>
 
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT TO EXPECT -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="split">
+
+        <div class="card">
+
+          <span class="sectionLabel">
+            What to expect
+          </span>
+
+          <h2>
+            Space to properly recover
+          </h2>
+
+          <p>
+            Our retreats take place in inspiring locations surrounded by nature,
+            chosen to create space for rest, reflection and meaningful connection.
+          </p>
+
+          <p>
+            The aim is simple: create enough distance from daily routines
+            to slow down, recover and return with more energy and clarity.
+          </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+          <div class="img">
+            <img
+              src="images/JL_GardenSaunaEve.jpeg"
+              alt="Outdoor sauna at Japandi Lounge in the evening"
+              loading="lazy">
+          </div>
+
+          <div class="img">
+            <img
+              src="images/JL_LivingroomStudy.jpeg"
+              alt="Japandi-style study and living area at Japandi Lounge"
+              loading="lazy">
+          </div>
+
+        </div>
 
       </div>
 
