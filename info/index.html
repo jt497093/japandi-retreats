@@ -1,1 +1,1054 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCPSZSL94Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TCPSZSL94Z');
+  </script>
+
+  <title>Retreat Information | Japandi Retreats</title>
+
+  <meta
+    name="description"
+    content="Learn more about Japandi Retreats, including the Intensive Recovery Retreat and 5 Day Silent Retreat programmes, activities, accommodation and hosts."
+  >
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://japandiretreats.com/information/">
+
+  <style>
+    :root {
+      --bg: #eee0cf;
+      --bg-soft: #f5ecdf;
+      --card: #f8f1e8;
+      --text: #1d1d1b;
+      --muted: #655f57;
+      --accent: #1d1d1b;
+      --accent-soft: #dfc6a8;
+      --line: rgba(29,29,27,.12);
+      --shadow: 0 18px 45px rgba(40,30,20,.08);
+      --radius: 20px;
+      --max: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg-soft);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover { opacity: .82; }
+
+    .container {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: rgba(245,236,223,.92);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      white-space: nowrap;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .navlinks a {
+      padding: 9px 11px;
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .3px;
+    }
+
+    .navlinks a:hover { color: var(--text); }
+
+    .navlinks a.active {
+      color: var(--text);
+      background: rgba(223,198,168,.22);
+    }
+
+    .navlinks a.cta {
+      background: var(--accent);
+      color: #fff;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    /* INTRO */
+
+    .pageIntro {
+      padding: 52px 0 30px;
+      text-align: center;
+    }
+
+    .eyebrow,
+    .sectionLabel {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .eyebrow {
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+    }
+
+    .pageTitle {
+      margin: 0;
+      font-size: clamp(38px,6vw,64px);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .pageLead {
+      max-width: 740px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* GENERAL */
+
+    .section {
+      padding: 34px 0;
+    }
+
+    .sectionIntro {
+      max-width: 800px;
+      margin-bottom: 24px;
+    }
+
+    .sectionLabel {
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(29px,4vw,42px);
+      line-height: 1.15;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(248,241,232,.82);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .retreatHero {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .retreatFacts {
+      display: grid;
+      gap: 10px;
+    }
+
+    .fact {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(223,198,168,.16);
+    }
+
+    .factLabel {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 2px;
+    }
+
+    .factValue {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* PROGRAMME */
+
+    .programmeWrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(248,241,232,.68);
+      box-shadow: var(--shadow);
+    }
+
+    .programmeTable {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+
+    .programmeTable th,
+    .programmeTable td {
+      padding: 16px 18px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .programmeTable tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .programmeTable th {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      background: rgba(223,198,168,.12);
+    }
+
+    .programmeTable td {
+      font-size: 14px;
+    }
+
+    .programmeTable td:first-child {
+      width: 120px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .programmeTable td:nth-child(2) {
+      width: 110px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .programmeNote {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* HOSTS */
+
+    .hostsGrid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .hostCard {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hostPhoto {
+      height: 310px;
+      background: var(--accent-soft);
+      overflow: hidden;
+    }
+
+    .hostPhoto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hostPhoto.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hostContent {
+      padding: 26px;
+    }
+
+    .hostRole {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+
+    .hostLeads {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hostLeads strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hostLink {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* SILENT RETREAT */
+
+    .silentGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .list {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .list li {
+      margin: 8px 0;
+    }
+
+    /* CTA */
+
+    .ctaRow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 45px;
+      padding: 11px 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .finalCta {
+      text-align: center;
+      padding: 38px;
+    }
+
+    .finalCta p {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .finalCta .ctaRow {
+      justify-content: center;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 34px 0 40px;
+      margin-top: 25px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footerInner {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 900px) {
+      .retreatHero,
+      .hostsGrid,
+      .silentGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .hostPhoto {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .navlinks {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .pageIntro {
+        padding-top: 34px;
+      }
+
+      .pageTitle {
+        font-size: 38px;
+        letter-spacing: 3px;
+      }
+
+      .pageLead {
+        font-size: 15px;
+      }
+
+      .card,
+      .finalCta {
+        padding: 22px;
+      }
+
+      .hostCard {
+        padding: 0;
+      }
+
+      .hostContent {
+        padding: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <nav class="nav">
+
+      <a class="brand" href="/">
+        Japandi Retreats
+      </a>
+
+      <div class="navlinks">
+        <a href="/#dates">Retreats</a>
+        <a href="/information/" class="active">Information</a>
+        <a href="/#locations">Locations</a>
+        <a href="/#faq">FAQ</a>
+
+        <a
+          href="https://wa.me/31615230319"
+          target="_blank"
+          rel="noopener"
+          class="cta">
+          Enquire
+        </a>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- PAGE INTRO -->
+
+  <section class="pageIntro">
+    <div class="container">
+
+      <span class="eyebrow">
+        Retreat information
+      </span>
+
+      <h1 class="pageTitle">
+        Choose your retreat
+      </h1>
+
+      <p class="pageLead">
+        Two different formats, both designed to create distance from everyday
+        routines and give you the time, space and guidance to reconnect.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- INTENSIVE RECOVERY RETREAT -->
+
+  <section
+    id="intensive-recovery"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          Intensive Recovery Retreat
+        </span>
+
+        <h2>
+          What's it about?
+        </h2>
+
+      </div>
+
+
+      <div class="retreatHero">
+
+        <div class="card">
+
+          <p>
+            The Intensive Recovery Retreat is a small-group experience designed
+            to help you step away from screens, routines and constant stimulation.
+            It creates the conditions to slow down, reset physically and mentally,
+            and reconnect with yourself.
+          </p>
+
+          <p>
+            The programme combines active challenges with periods of calm.
+            Breathwork, cold exposure, movement, meditation, sound, recovery
+            practices, shared meals and time in nature are brought together in
+            one carefully paced experience.
+          </p>
+
+          <p>
+            Nothing is about performing or competing. The aim is to challenge
+            yourself where it feels useful, then create enough space afterwards
+            for the body and mind to settle, recover and process the experience.
+          </p>
+
+          <p>
+            Activities are organised and led by experienced professionals who
+            provide clear guidance in a supportive, relaxed environment.
+          </p>
+
+        </div>
+
+
+        <div class="retreatFacts">
+
+          <div class="fact">
+            <span class="factLabel">Duration</span>
+            <span class="factValue">3 nights / 4 days</span>
+          </div>
+
+          <div class="fact">
+            <span class="factLabel">Group size</span>
+            <span class="factValue">Maximum 10 participants</span>
+          </div>
+
+          <div class="fact">
+            <span class="factLabel">Location</span>
+            <span class="factValue">Japandi Lounge, Noord-Brabant</span>
+          </div>
+
+          <div class="fact">
+            <span class="factLabel">Experience required</span>
+            <span class="factValue">None</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROGRAMME -->
+
+  <section
+    id="programme"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          Intensive Recovery Retreat
+        </span>
+
+        <h2>
+          Programme
+        </h2>
+
+        <p>
+          A balance of guided sessions, shared meals, recovery and unstructured
+          time. The exact programme can be adjusted to the group and conditions.
+        </p>
+
+      </div>
+
+
+      <div class="programmeWrap">
+
+        <table class="programmeTable">
+
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Friday</td>
+              <td>16:00</td>
+              <td>Arrival, settle in, explore the house and slow down.</td>
+            </tr>
+
+            <tr>
+              <td>Friday</td>
+              <td>18:00</td>
+              <td>Welcome dinner, introductions and connection with the group.</td>
+            </tr>
+
+            <tr>
+              <td>Friday</td>
+              <td>21:00</td>
+              <td>Opening ceremony with live music, sound healing and gentle breathwork for relaxation and sleep.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>08:00</td>
+              <td>Morning movement, stretching and practical breathing techniques.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>09:00</td>
+              <td>Group introduction, intentions and what you want to take from the weekend.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>09:30</td>
+              <td>Breakfast.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>10:30</td>
+              <td>Breathing theory, practical explanation and preparation for cold exposure.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>11:00</td>
+              <td>Guided ice-bath session with preparation, breathing and recovery afterwards.</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>Afternoon</td>
+              <td>Lunch, recovery time and guided activities. Final timing and sessions will be published with the retreat.</td>
+            </tr>
+
+            <tr>
+              <td>Sunday</td>
+              <td>Morning</td>
+              <td>Movement, meditation, breathwork and shared breakfast.</td>
+            </tr>
+
+            <tr>
+              <td>Sunday</td>
+              <td>Daytime</td>
+              <td>Recovery workshops, reflection, nature, shared meals and guided experiences.</td>
+            </tr>
+
+            <tr>
+              <td>Monday</td>
+              <td>Morning</td>
+              <td>Final session, reflection, breakfast and time to integrate the weekend.</td>
+            </tr>
+
+            <tr>
+              <td>Monday</td>
+              <td>12:00</td>
+              <td>Retreat ends and departure.</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <p class="programmeNote">
+        Programme timings may change slightly depending on weather, group needs
+        and the final combination of facilitators and sessions.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- HOSTS -->
+
+  <section
+    id="hosts"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          Intensive Recovery Retreat
+        </span>
+
+        <h2>
+          Your hosts
+        </h2>
+
+        <p>
+          Meet the people guiding the sessions and creating the environment
+          for the retreat.
+        </p>
+
+      </div>
+
+
+      <div class="hostsGrid">
+
+
+        <!-- MIKE MOL -->
+
+        <article class="card hostCard">
+
+          <div class="hostPhoto">
+            <img
+              src="/images/mike-mol.webp"
+              alt="Mike Mol"
+              loading="lazy">
+          </div>
+
+          <div class="hostContent">
+
+            <h3>
+              Mike Mol
+            </h3>
+
+            <p class="hostRole">
+              Musician | Movement & Recovery Therapist
+            </p>
+
+            <p>
+              Mike combines his passion for music with expertise in breathwork,
+              cold training, movement and recovery therapy. He leads workshops
+              and expeditions in extraordinary locations, helping people relax,
+              expand their limits and reconnect with themselves.
+            </p>
+
+            <p>
+              His work has included collaboration with Wim Hof and breath expert
+              James Nestor, alongside extensive experience in functional breathing,
+              cold exposure, movement, recovery therapy and live music.
+            </p>
+
+            <div class="hostLeads">
+              <strong>Leading:</strong>
+              Breathwork, cold exposure, movement, recovery and meditative live music
+            </div>
+
+            <a
+              class="hostLink"
+              href="https://mikemol.com/"
+              target="_blank"
+              rel="noopener">
+              mikemol.com
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- JOSJE -->
+
+        <article class="card hostCard">
+
+          <div class="hostPhoto placeholder">
+            Josje photo
+          </div>
+
+          <div class="hostContent">
+
+            <h3>
+              Josje
+            </h3>
+
+            <p class="hostRole">
+              Host profile coming soon
+            </p>
+
+            <p>
+              Josje's introduction, professional background and role within
+              the Intensive Recovery Retreat will appear here.
+            </p>
+
+            <p>
+              This card is ready for her photograph, biography, qualifications
+              and the sessions she will lead during the retreat.
+            </p>
+
+            <div class="hostLeads">
+              <strong>Leading:</strong>
+              To be confirmed
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SILENT RETREAT -->
+
+  <section
+    id="silent-retreat"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          5 Day Silent Retreat
+        </span>
+
+        <h2>
+          What's it about?
+        </h2>
+
+      </div>
+
+
+      <div class="silentGrid">
+
+        <div class="card">
+
+          <p>
+            The 5 Day Silent Retreat is a deeper step away from the noise,
+            demands and constant stimulation of everyday life.
+          </p>
+
+          <p>
+            By removing everyday conversation and familiar distractions, the
+            retreat creates space for meditation, reflection and greater
+            awareness of thoughts, emotions and habits.
+          </p>
+
+          <p>
+            Silence is combined with a carefully structured daily rhythm.
+            Rather than filling every hour, the programme is intentionally
+            spacious so participants have time to process, rest and reconnect.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <span class="sectionLabel">
+            Programme structure
+          </span>
+
+          <ul class="list">
+            <li>4 nights / 5 days</li>
+            <li>Periods of complete silence</li>
+            <li>Daily meditation</li>
+            <li>Gentle movement and yoga</li>
+            <li>Breathwork and guided recovery practices</li>
+            <li>Time in nature</li>
+            <li>Journaling and personal reflection</li>
+            <li>Shared meals in silence</li>
+            <li>Closing integration session</li>
+          </ul>
+
+          <p style="margin-top:18px">
+            A complete day-by-day programme and the host team will be added
+            once the final Northumberland programme is confirmed.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="card finalCta">
+
+        <span class="sectionLabel">
+          Japandi Retreats
+        </span>
+
+        <h2>
+          Which retreat is right for you?
+        </h2>
+
+        <p>
+          If you have questions about the programme, accommodation or whether
+          one of these retreats is a good fit for you, contact us directly.
+        </p>
+
+        <div class="ctaRow">
+
+          <a
+            class="btn primary"
+            href="https://wa.me/31615230319"
+            target="_blank"
+            rel="noopener">
+            Enquire on WhatsApp
+          </a>
+
+          <a
+            class="btn"
+            href="/#dates">
+            View upcoming retreats
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerInner">
+
+      <div>
+        © <span id="y"></span> Japandi Retreats
+      </div>
+
+      <div>
+        Small-group retreats in inspiring natural locations
+      </div>
+
+      <div>
+        WhatsApp:
+        <a href="https://wa.me/31615230319">
+          +31 6 15230319
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
