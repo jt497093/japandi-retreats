@@ -662,6 +662,62 @@
     }
 
 
+
+    /* LOCATION GALLERY */
+
+    .locationCard {
+      margin-bottom: 18px;
+    }
+
+    .locationGallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .locationPhoto {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--accent-soft);
+      aspect-ratio: 4 / 3;
+      box-shadow: var(--shadow);
+    }
+
+    .locationPhoto img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.28s ease;
+    }
+
+    .locationItem {
+      min-width: 0;
+    }
+
+    .locationLabel {
+      display: block;
+      margin-top: 10px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .locationPhoto:hover img {
+        transform: scale(1.025);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .locationGallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     /* FAQ */
 
     .faqList {
@@ -1475,14 +1531,17 @@
           </span>
 
           <h2>
-            Space to recover, space to learn
+            Space to properly recover
           </h2>
 
           <p>
             Our retreats take place in inspiring locations surrounded by nature,
             chosen to create space for rest, reflection and meaningful connection.
-            Here we create enough distance from daily routines to slow down, 
-            recover and return with more energy and clarity.
+          </p>
+
+          <p>
+            The aim is simple: create enough distance from daily routines
+            to slow down, recover and return with more energy and clarity.
           </p>
 
         </div>
@@ -1521,71 +1580,63 @@
 
     <div class="container">
 
-      <div class="split">
+      <div class="card locationCard">
 
-        <div class="card">
+        <span class="sectionLabel">
+          Locations
+        </span>
 
-          <span class="sectionLabel">
-            Locations
+        <h2>
+          Places chosen for the retreat
+        </h2>
+
+        <p>
+          Japandi Retreats is not tied to one property. Each location is chosen
+          for its atmosphere, access to nature and ability to give the group
+          enough distance from everyday routines.
+        </p>
+
+        <p>
+          Our first retreats take place at Japandi Lounge in the countryside
+          near Den Bosch, with additional retreats planned in locations
+          including Northumberland in the UK.
+        </p>
+
+        <ul class="list">
+          <li>Peaceful natural surroundings</li>
+          <li>Comfortable group accommodation</li>
+          <li>Space for guided sessions and quiet time</li>
+          <li>Shared areas for meals and connection</li>
+          <li>Wellness facilities where appropriate to the programme</li>
+        </ul>
+
+      </div>
+
+
+      <div class="locationGallery">
+
+        <div class="locationItem">
+          <div class="locationPhoto">
+            <img
+              src="images/brabant.webp"
+              alt="Noord-Brabant countryside retreat location"
+              loading="lazy">
+          </div>
+          <span class="locationLabel">
+            Noord-Brabant countryside
           </span>
-
-          <h2>
-            Places chosen for the retreat
-          </h2>
-
-          <p>
-            Japandi Retreats is not tied to one property. Each location is chosen
-            for its atmosphere, access to nature and ability to give the group
-            enough distance from everyday routines.
-          </p>
-
-          <p>
-            Our first retreats take place at Japandi Lounge in the countryside
-            near Den Bosch, with additional retreats planned in locations
-            including Northumberland in the UK.
-          </p>
-
-          <ul class="list">
-            <li>Peaceful natural surroundings</li>
-            <li>Comfortable group accommodation</li>
-            <li>Space for guided sessions and quiet time</li>
-            <li>Shared areas for meals and connection</li>
-            <li>Wellness facilities where appropriate to the programme</li>
-          </ul>
-
         </div>
 
-
-        <div class="gallery">
-
-          <div class="img">
+        <div class="locationItem">
+          <div class="locationPhoto">
             <img
-              src="images/JL_Kitchen.jpeg"
-              alt="Large communal kitchen for retreat guests at Japandi Lounge"
+              src="images/kielder.webp"
+              alt="Kielder, Northumberland retreat location"
               loading="lazy">
           </div>
-
-          <div class="img">
-            <img
-              src="images/JL_LivingroomSofa2.jpeg"
-              alt="Calm living room seating area at Japandi Lounge"
-              loading="lazy">
-          </div>
-
-          <div class="img">
-            <img
-              src="images/JL_Hall.jpeg"
-              alt="Natural Japandi-style hallway interior at Japandi Lounge"
-              loading="lazy">
-          </div>
-
-          <div class="img">
-            <img
-              src="images/JL_Bedroom1.jpeg"
-              alt="Guest bedroom at Japandi Lounge retreat accommodation"
-              loading="lazy">
-          </div>
-
+          <span class="locationLabel">
+            Kielder Northumberland
+          </span>
         </div>
 
       </div>
@@ -1593,7 +1644,6 @@
     </div>
 
   </section>
-
 
   <!-- RETREAT FAQ -->
 
