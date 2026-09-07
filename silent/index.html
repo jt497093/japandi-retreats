@@ -1,1 +1,875 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TCPSZSL94Z"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TCPSZSL94Z');
+  </script>
+<title>5 Day Silent Retreat | Japandi Retreats</title>
+<meta content="Learn more about the 5 Day Silent Retreat in Kielder, Northumberland, including retreat information, programme updates, accommodation and hosts." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://japandiretreats.com/silent/" rel="canonical"/>
+<style>
+    :root {
+      --bg: #eee0cf;
+      --bg-soft: #f5ecdf;
+      --card: #f8f1e8;
+      --text: #1d1d1b;
+      --muted: #655f57;
+      --accent: #1d1d1b;
+      --accent-soft: #dfc6a8;
+      --line: rgba(29,29,27,.12);
+      --shadow: 0 18px 45px rgba(40,30,20,.08);
+      --radius: 20px;
+      --max: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg-soft);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover { opacity: .82; }
+
+    .container {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: rgba(245,236,223,.92);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      white-space: nowrap;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .navlinks a {
+      padding: 9px 11px;
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .3px;
+    }
+
+    .navlinks a:hover { color: var(--text); }
+
+    .navlinks a.active {
+      color: var(--text);
+      background: rgba(223,198,168,.22);
+    }
+
+    .navlinks a.cta {
+      background: var(--accent);
+      color: #fff;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    /* INTRO */
+
+    .pageIntro {
+      padding: 36px 0 28px;
+    }
+
+    .pageIntroCard {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 56px 40px;
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 6px);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(15, 15, 14, 0.46) 0%,
+          rgba(15, 15, 14, 0.28) 34%,
+          rgba(15, 15, 14, 0.08) 56%,
+          rgba(15, 15, 14, 0.02) 100%
+        ),
+        url("/images/kielder.webp") center center / cover no-repeat;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .pageIntroContent {
+      max-width: 560px;
+      text-align: left;
+    }
+
+    .eyebrow,
+    .sectionLabel {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .eyebrow {
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .pageTitle {
+      margin: 0;
+      font-size: clamp(38px,6vw,64px);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .pageLead {
+      max-width: 740px;
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 17px;
+      line-height: 1.6;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    /* GENERAL */
+
+    .section {
+      padding: 34px 0;
+    }
+
+    .sectionIntro {
+      max-width: 800px;
+      margin-bottom: 24px;
+    }
+
+    .sectionLabel {
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(29px,4vw,42px);
+      line-height: 1.15;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(248,241,232,.82);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .retreatHero {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .retreatFacts {
+      display: grid;
+      gap: 10px;
+    }
+
+    .fact {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(223,198,168,.16);
+    }
+
+    .factLabel {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 2px;
+    }
+
+    .factValue {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* PROGRAMME */
+
+    .programmeWrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(248,241,232,.68);
+      box-shadow: var(--shadow);
+    }
+
+    .programmeTable {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .programmeTable th,
+    .programmeTable td {
+      padding: 14px 12px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .programmeTable tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .programmeTable th {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      background: rgba(223,198,168,.12);
+    }
+
+    .programmeTable td {
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .programmeDetail {
+      display: block;
+      margin-top: 4px;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    .programmeTable th:first-child,
+    .programmeTable td:first-child {
+      width: 96px;
+    }
+
+    .programmeTable th:nth-child(2),
+    .programmeTable td:nth-child(2) {
+      width: 68px;
+    }
+
+    .programmeTable td:first-child {
+      font-weight: 600;
+      white-space: normal;
+      vertical-align: top;
+      background: rgba(223,198,168,.08);
+    }
+
+    .programmeTable td:nth-child(2) {
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .programmeTable th:nth-child(3),
+    .programmeTable td:nth-child(3) {
+      width: auto;
+    }
+
+    .programmeNote {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* HOSTS */
+
+    .hostsGrid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .hostCard {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hostPhoto {
+      height: 310px;
+      background: var(--accent-soft);
+      overflow: hidden;
+    }
+
+    .hostPhoto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hostPhotoPair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2px;
+      background: var(--line);
+    }
+
+    .hostPhotoPair img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .hostPhoto.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hostContent {
+      padding: 26px;
+    }
+
+    .hostRole {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+
+    .hostLeads {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hostLeads strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hostLink {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+
+
+
+    /* MOBILE PROGRAMME */
+
+    .programmeMobile {
+      display: none;
+    }
+
+    @media (max-width: 720px) {
+
+      .programmeWrap {
+        display: none;
+      }
+
+      .programmeMobile {
+        display: grid;
+        gap: 18px;
+      }
+
+      .programmeDay {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(248,241,232,.82);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .programmeDayTitle {
+        margin: 0;
+        padding: 16px 18px;
+        background: rgba(223,198,168,.18);
+        border-bottom: 1px solid var(--line);
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .programmeItem {
+        display: grid;
+        grid-template-columns: 58px minmax(0,1fr);
+        gap: 12px;
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .programmeItem:last-child {
+        border-bottom: 0;
+      }
+
+      .programmeTime {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .programmeActivity {
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.55;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .programmeActivity .programmeDetail {
+        display: inline;
+        margin: 0;
+      }
+
+      .programmeNote {
+        margin-top: 14px;
+      }
+    }
+
+
+    /* ACCOMMODATION */
+
+    .accommodationIntro {
+      max-width: 800px;
+      margin-bottom: 22px;
+    }
+
+    .accommodationLink {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 6px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .accommodationGallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .accommodationGallery.single {
+      grid-template-columns: 1fr;
+    }
+
+    .accommodationGallery.single .accommodationPhoto {
+      aspect-ratio: 16 / 7;
+    }
+
+    @media (max-width: 900px) {
+      .accommodationGallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .accommodationPhoto {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--accent-soft);
+      aspect-ratio: 4 / 3;
+      box-shadow: var(--shadow);
+    }
+
+    .accommodationPhoto img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .28s ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .accommodationPhoto:hover img {
+        transform: scale(1.025);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .accommodationGallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* CTA */
+
+    .ctaRow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 45px;
+      padding: 11px 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .finalCta {
+      text-align: center;
+      padding: 38px;
+    }
+
+    .finalCta p {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .finalCta .finalCtaSmall {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .finalCta .ctaRow {
+      justify-content: center;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 34px 0 40px;
+      margin-top: 25px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footerInner {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 900px) {
+      .retreatHero,
+      .hostsGrid,
+      .silentGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .hostPhoto {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .navlinks {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .pageIntro {
+        padding-top: 24px;
+      }
+
+      .pageIntroCard {
+        min-height: 320px;
+        padding: 28px 22px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(15, 15, 14, 0.42) 0%,
+            rgba(15, 15, 14, 0.22) 48%,
+            rgba(15, 15, 14, 0.05) 100%
+          ),
+          url("/images/kielder.webp") center center / cover no-repeat;
+      }
+
+      .pageIntroContent {
+        max-width: 78%;
+      }
+
+      .pageTitle {
+        font-size: 38px;
+        letter-spacing: 3px;
+      }
+
+      .pageLead {
+        font-size: 15px;
+      }
+
+      .card,
+      .finalCta {
+        padding: 22px;
+      }
+
+      .hostCard {
+        padding: 0;
+      }
+
+      .hostContent {
+        padding: 22px;
+      }
+
+      .programmeWrap {
+        overflow-x: visible;
+      }
+
+      .programmeTable th,
+      .programmeTable td {
+        padding: 12px 8px;
+      }
+
+      .programmeTable td:first-child,
+      .programmeTable th:first-child {
+        width: 82px;
+      }
+
+      .programmeTable td:nth-child(2),
+      .programmeTable th:nth-child(2) {
+        width: 52px;
+      }
+
+      .programmeTable td:first-child {
+        white-space: normal;
+      }
+
+      .programmeTable td:nth-child(2) {
+        white-space: nowrap;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<header class="topbar">
+<div class="container">
+<nav class="nav">
+<a class="brand" href="/">
+        Japandi Retreats
+      </a>
+<div class="navlinks"><a href="/">Home</a><a href="/intense-recovery/">Intense recovery</a><a class="active" href="/silent/">Silent retreat</a><a href="/calendar/">Calendar &amp; pricing</a><a href="/#faq">FAQ</a><a class="cta" href="/calendar/#reserve">Reserve your place</a></div>
+</nav>
+</div>
+</header>
+<main>
+<!-- PAGE INTRO -->
+<section class="pageIntro">
+<div class="container">
+<div class="pageIntroCard">
+<div class="pageIntroContent">
+<span class="eyebrow">Retreat information</span>
+<h1 class="pageTitle">5 Day Silent Retreat</h1>
+<p class="pageLead">Five days in Kielder, Northumberland, designed to create distance from everyday noise, conversation and constant stimulation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- INTENSIVE RECOVERY RETREAT -->
+<section class="section" id="silent-retreat">
+<div class="container">
+<div class="sectionIntro">
+<span class="sectionLabel">5 Day Silent Retreat</span>
+<h2>What's it about?</h2>
+</div>
+<div class="retreatHero">
+<div class="card"><p>A silent retreat gives you the rare opportunity to step away from the noise, demands and constant stimulation of everyday life.</p><p>By removing familiar distractions and everyday conversation, the retreat creates space to slow down, reflect and become more aware of your thoughts, emotions and habits.</p><p>The five-day format allows more time for silence, meditation, reflection and guided activities without the usual social distractions. The aim is to return to everyday life with greater clarity and a clearer sense of what matters.</p><p>The detailed programme is still being finalised. Timings, activities and practical information will be added here as they are confirmed.</p></div>
+<div class="retreatFacts"><div class="fact"><span class="factLabel">Duration</span><span class="factValue">4 nights / 5 days</span></div><div class="fact"><span class="factLabel">Group size</span><span class="factValue">Maximum 10 participants</span></div><div class="fact"><span class="factLabel">Location</span><span class="factValue">Kielder, Northumberland</span></div><div class="fact"><span class="factLabel">Price</span><span class="factValue">€2,345 per person</span></div><div class="fact"><span class="factLabel">Experience required</span><span class="factValue">TBC</span></div></div>
+</div>
+</div>
+</section>
+<!-- PROGRAMME -->
+<section class="section" id="programme">
+<div class="container">
+<div class="sectionIntro">
+<span class="sectionLabel">5 Day Silent Retreat</span>
+<h2>
+          Programme
+        </h2>
+<p>The detailed five-day programme is currently being finalised. The structure below will be updated as timings and activities are confirmed.</p>
+</div>
+<div class="programmeWrap">
+<table class="programmeTable">
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody><tr><td>Day 1</td><td>TBC</td><td>Arrival, settling in and opening session. Full details coming soon.</td></tr><tr><td>Day 2</td><td>TBC</td><td>Silent retreat programme. Detailed schedule coming soon.</td></tr><tr><td>Day 3</td><td>TBC</td><td>Silent retreat programme. Detailed schedule coming soon.</td></tr><tr><td>Day 4</td><td>TBC</td><td>Silent retreat programme. Detailed schedule coming soon.</td></tr><tr><td>Day 5</td><td>TBC</td><td>Closing session and departure. Full details coming soon.</td></tr></tbody>
+</table>
+</div>
+<div aria-label="Retreat programme" class="programmeMobile"><section class="programmeDay"><h3 class="programmeDayTitle">Day 1</h3><div class="programmeItem"><div class="programmeTime">TBC</div><div class="programmeActivity">Arrival, settling in and opening session. Full details coming soon.</div></div></section><section class="programmeDay"><h3 class="programmeDayTitle">Day 2</h3><div class="programmeItem"><div class="programmeTime">TBC</div><div class="programmeActivity">Silent retreat programme. Detailed schedule coming soon.</div></div></section><section class="programmeDay"><h3 class="programmeDayTitle">Day 3</h3><div class="programmeItem"><div class="programmeTime">TBC</div><div class="programmeActivity">Silent retreat programme. Detailed schedule coming soon.</div></div></section><section class="programmeDay"><h3 class="programmeDayTitle">Day 4</h3><div class="programmeItem"><div class="programmeTime">TBC</div><div class="programmeActivity">Silent retreat programme. Detailed schedule coming soon.</div></div></section><section class="programmeDay"><h3 class="programmeDayTitle">Day 5</h3><div class="programmeItem"><div class="programmeTime">TBC</div><div class="programmeActivity">Closing session and departure. Full details coming soon.</div></div></section></div>
+<p class="programmeNote">Programme, timings and activities are TBC and will be published as soon as the final retreat schedule is confirmed.</p>
+</div>
+</section>
+<!-- HOSTS -->
+<section class="section" id="hosts">
+<div class="container">
+<div class="sectionIntro">
+<span class="sectionLabel">5 Day Silent Retreat</span>
+<h2>
+          Your hosts
+        </h2>
+<p>The hosts and facilitators for the 5 Day Silent Retreat will be announced soon.</p>
+</div>
+<div class="hostsGrid"><article class="card hostCard"><div class="hostPhoto placeholder">Photo coming soon</div><div class="hostContent"><h3>Host 1 TBC</h3><p class="hostRole">Host profile coming soon</p><p>The host's background, experience and role within the Silent Retreat will be added here once confirmed.</p><div class="hostLeads"><strong>Leading:</strong> TBC</div></div></article><article class="card hostCard"><div class="hostPhoto placeholder">Photo coming soon</div><div class="hostContent"><h3>Host 2 TBC</h3><p class="hostRole">Host profile coming soon</p><p>The host's background, experience and role within the Silent Retreat will be added here once confirmed.</p><div class="hostLeads"><strong>Leading:</strong> TBC</div></div></article></div>
+</div>
+</section>
+<!-- ACCOMMODATION -->
+<section class="section" id="accommodation">
+<div class="container">
+<div class="accommodationIntro">
+<span class="sectionLabel">Accommodation</span>
+<h2>Stay in Kielder, Northumberland</h2>
+<p>The 5 Day Silent Retreat will take place in Kielder, Northumberland. Full accommodation details, room arrangements and facilities are currently being finalised and will be published here soon.</p>
+
+</div>
+<div class="accommodationGallery single"><div class="accommodationPhoto"><img alt="Kielder, Northumberland retreat location" loading="lazy" src="/images/kielder.webp"/></div></div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="section">
+<div class="container">
+<div class="card finalCta">
+<span class="sectionLabel">Japandi Retreats</span>
+<h2>Slow down. Reset. Reconnect.</h2>
+<p class="finalCtaSmall">
+  Questions about a retreat, availability or whether a particular programme is
+  right for you? Contact us directly.
+</p>
+<div class="ctaRow">
+<a class="btn" href="/#faq">
+    View FAQ
+  </a>
+<a class="btn primary" href="https://wa.me/31615230319" rel="noopener" target="_blank">
+    WhatsApp us
+  </a>
+<a class="btn" href="/calendar/#reserve">
+    Reserve your place
+  </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footerInner">
+<div>
+        © <span id="y"></span> Japandi Retreats
+      </div>
+<div>
+        Small-group retreats in inspiring natural locations
+      </div>
+<div>
+        WhatsApp:
+        <a href="https://wa.me/31615230319">
+          +31 6 15230319
+        </a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
