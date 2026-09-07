@@ -135,20 +135,26 @@
     .pageIntroCard {
       position: relative;
       overflow: hidden;
-      min-height: 360px;
+      min-height: 390px;
       padding: 56px 40px;
       border: 1px solid var(--line);
       border-radius: calc(var(--radius) + 6px);
       background:
-        linear-gradient(rgba(15, 15, 14, 0.44), rgba(15, 15, 14, 0.44)),
-        url("/images/mike5.webp") center center / cover no-repeat;
+        linear-gradient(
+          90deg,
+          rgba(15, 15, 14, 0.46) 0%,
+          rgba(15, 15, 14, 0.28) 34%,
+          rgba(15, 15, 14, 0.08) 56%,
+          rgba(15, 15, 14, 0.02) 100%
+        ),
+        url("/images/mike5.webp") 72% center / cover no-repeat;
       box-shadow: var(--shadow);
       display: flex;
       align-items: flex-end;
     }
 
     .pageIntroContent {
-      max-width: 760px;
+      max-width: 560px;
       text-align: left;
     }
 
@@ -280,7 +286,7 @@
 
     .programmeTable th,
     .programmeTable td {
-      padding: 16px 18px;
+      padding: 14px 12px;
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid var(--line);
@@ -312,18 +318,31 @@
       line-height: 1.55;
     }
 
+    .programmeTable th:first-child,
     .programmeTable td:first-child {
-      width: 120px;
+      width: 96px;
+    }
+
+    .programmeTable th:nth-child(2),
+    .programmeTable td:nth-child(2) {
+      width: 68px;
+    }
+
+    .programmeTable td:first-child {
       font-weight: 600;
-      white-space: nowrap;
+      white-space: normal;
       vertical-align: top;
       background: rgba(223,198,168,.08);
     }
 
     .programmeTable td:nth-child(2) {
-      width: 110px;
       color: var(--muted);
       white-space: nowrap;
+    }
+
+    .programmeTable th:nth-child(3),
+    .programmeTable td:nth-child(3) {
+      width: auto;
     }
 
     .programmeNote {
@@ -356,6 +375,10 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    .hostPhotoJosje img {
+      object-position: center top;
     }
 
     .hostPhoto.placeholder {
@@ -556,8 +579,20 @@
       }
 
       .pageIntroCard {
-        min-height: 280px;
+        min-height: 320px;
         padding: 28px 22px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(15, 15, 14, 0.42) 0%,
+            rgba(15, 15, 14, 0.22) 48%,
+            rgba(15, 15, 14, 0.05) 100%
+          ),
+          url("/images/mike5.webp") 68% center / cover no-repeat;
+      }
+
+      .pageIntroContent {
+        max-width: 78%;
       }
 
       .pageTitle {
@@ -593,12 +628,12 @@
 
       .programmeTable td:first-child,
       .programmeTable th:first-child {
-        width: 78px;
+        width: 82px;
       }
 
       .programmeTable td:nth-child(2),
       .programmeTable th:nth-child(2) {
-        width: 64px;
+        width: 52px;
       }
 
       .programmeTable td:first-child {
@@ -1059,7 +1094,7 @@
 
         <article class="card hostCard">
 
-          <div class="hostPhoto">
+          <div class="hostPhoto hostPhotoJosje">
             <img
               src="/images/josje2.webp"
               alt="Josje"
