@@ -313,9 +313,9 @@
     .programmeDetail {
       display: block;
       margin-top: 4px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.55;
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
     }
 
     .programmeTable th:first-child,
@@ -424,6 +424,79 @@
       text-underline-offset: 3px;
     }
 
+
+
+
+    /* MOBILE PROGRAMME */
+
+    .programmeMobile {
+      display: none;
+    }
+
+    @media (max-width: 720px) {
+
+      .programmeWrap {
+        display: none;
+      }
+
+      .programmeMobile {
+        display: grid;
+        gap: 18px;
+      }
+
+      .programmeDay {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(248,241,232,.82);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .programmeDayTitle {
+        margin: 0;
+        padding: 16px 18px;
+        background: rgba(223,198,168,.18);
+        border-bottom: 1px solid var(--line);
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .programmeItem {
+        display: grid;
+        grid-template-columns: 58px minmax(0,1fr);
+        gap: 12px;
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .programmeItem:last-child {
+        border-bottom: 0;
+      }
+
+      .programmeTime {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .programmeActivity {
+        color: var(--text);
+        font-size: 14px;
+        line-height: 1.55;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .programmeActivity .programmeDetail {
+        display: inline;
+        margin: 0;
+      }
+
+      .programmeNote {
+        margin-top: 14px;
+      }
+    }
 
 
     /* ACCOMMODATION */
@@ -999,6 +1072,152 @@
         </table>
 
       </div>
+
+      
+
+      <div class="programmeMobile" aria-label="Retreat programme">
+
+        <section class="programmeDay">
+          <h3 class="programmeDayTitle">Friday</h3>
+
+          <div class="programmeItem">
+            <div class="programmeTime">15:30</div>
+            <div class="programmeActivity">Arrival, settle in, explore the house and unwind.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">18:00</div>
+            <div class="programmeActivity">Welcome dinner, meet the team, connect and enjoy the evening together.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">21:00</div>
+            <div class="programmeActivity">Opening ceremony with Mike &amp; Josje, live music, blue lotus and gentle breathwork. A relaxed introduction focused on deep rest and sleep: feeling first, then understanding.</div>
+          </div>
+        </section>
+
+
+        <section class="programmeDay">
+          <h3 class="programmeDayTitle">Saturday</h3>
+
+          <div class="programmeItem">
+            <div class="programmeTime">08:00</div>
+            <div class="programmeActivity">Fresh start with stretching, activation and practical breathing. Learn simple techniques to improve everyday breathing and make each breath more effective.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">09:00</div>
+            <div class="programmeActivity">Introductions, icebreaker and intentions. Meet the group and reflect on what you would like to take from the weekend.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">09:30</div>
+            <div class="programmeActivity">Breakfast.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">10:30</div>
+            <div class="programmeActivity">Breathing theory and Q&amp;A. Why the exercises work, what you may feel and time for questions.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">11:00</div>
+            <div class="programmeActivity">Guided ice-bath session. Preparation, entering the water, warming yourself from within and the benefits of cold exposure. Sessions are individual or in pairs.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">12:00</div>
+            <div class="programmeActivity">Movement game to warm up further and deepen your connection with nature.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">12:30</div>
+            <div class="programmeActivity">Lunch followed by free time.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">15:30</div>
+            <div class="programmeActivity">External activity, for example a canoe trip.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">19:00</div>
+            <div class="programmeActivity">Dinner, pizza making, sunset and campfire.</div>
+          </div>
+        </section>
+
+
+        <section class="programmeDay">
+          <h3 class="programmeDayTitle">Sunday</h3>
+
+          <div class="programmeItem">
+            <div class="programmeTime">08:00</div>
+            <div class="programmeActivity">Cacao ceremony.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">08:30</div>
+            <div class="programmeActivity">Deep breathwork session with live music, followed by space to share afterwards.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">10:00</div>
+            <div class="programmeActivity">Breakfast.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">11:00</div>
+            <div class="programmeActivity">Nature walk and guided connection exercise. In pairs, one person is blindfolded and guided by the other. Barefoot walking or nearby natural water may be included where suitable.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">12:30</div>
+            <div class="programmeActivity">Lunch and siesta.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">15:30</div>
+            <div class="programmeActivity">Hot &amp; Cold recovery session. Alternate between cold immersion and the sauna or hot tub. A larger ice-filled jacuzzi can be used for group sessions.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">18:00</div>
+            <div class="programmeActivity">Dinner.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">20:00</div>
+            <div class="programmeActivity">Q&amp;A and sharing circle. How to build the practices into daily life, optionally followed by a sharing circle around the campfire.</div>
+          </div>
+        </section>
+
+
+        <section class="programmeDay">
+          <h3 class="programmeDayTitle">Monday</h3>
+
+          <div class="programmeItem">
+            <div class="programmeTime">08:00</div>
+            <div class="programmeActivity">Final breathwork session, connection and closing.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">09:00</div>
+            <div class="programmeActivity">Breakfast.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">10:00</div>
+            <div class="programmeActivity">Final session, reflection and time to integrate the weekend.</div>
+          </div>
+
+          <div class="programmeItem">
+            <div class="programmeTime">12:30</div>
+            <div class="programmeActivity">Retreat ends and departure.</div>
+          </div>
+        </section>
+
+      </div>
+
 
       <p class="programmeNote">
         This is an example schedule. Timings and activities may change slightly
