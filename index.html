@@ -860,48 +860,16 @@
       margin-right: auto;
     }
 
+    .finalCta .finalCtaSmall {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
     .finalCta .ctaRow {
       justify-content: center;
     }
 
 
-    /* FLOATING WHATSAPP */
-
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 40;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 52px;
-      height: 52px;
-
-      border-radius: 50%;
-      background: #25D366;
-      color: #fff;
-
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1;
-
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      .whatsapp-float:hover {
-        opacity: 1;
-        transform: translateY(-2px);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.23);
-      }
-    }
 
 
     /* FOOTER */
@@ -1038,7 +1006,7 @@
 <a class="brand" href="/">
         Japandi Retreats
       </a>
-<div class="navlinks"><a href="/">Home</a><a href="/intense-recovery/">Intense recovery</a><a href="/intense-recovery/">Silent retreat</a><a href="/calendar/">Calendar &amp; pricing</a><a href="/#faq">FAQ</a><a class="cta" href="/calendar/#reserve">Reserve your place</a></div>
+<div class="navlinks"><a href="/">Home</a><a href="/intense-recovery/">Intense recovery</a><a href="/silent/">Silent retreat</a><a href="/calendar/">Calendar &amp; pricing</a><a href="/#faq">FAQ</a><a class="cta" href="/calendar/#reserve">Reserve your place</a></div>
 </nav>
 </div>
 </header>
@@ -1437,33 +1405,28 @@
 <section class="section">
 <div class="container">
 <div class="card finalCta">
-<span class="sectionLabel">
-          Japandi Retreats
-        </span>
-<h2>
-          Slow down. Reset. Reconnect.
-        </h2>
-<p>
-          Questions about a retreat, availability or whether a particular
-          programme is right for you? Contact us directly.
-        </p>
+<span class="sectionLabel">Japandi Retreats</span>
+<h2>Slow down. Reset. Reconnect.</h2>
+<p class="finalCtaSmall">
+  Questions about a retreat, availability or whether a particular programme is
+  right for you? Contact us directly.
+</p>
 <div class="ctaRow">
+<a class="btn" href="/#faq">
+    View FAQ
+  </a>
 <a class="btn primary" href="https://wa.me/31615230319" rel="noopener" target="_blank">
-            WhatsApp Japandi Retreats
-          </a>
-<a class="btn" href="/">
-            Home
-          </a>
+    WhatsApp us
+  </a>
+<a class="btn" href="/calendar/#reserve">
+    Reserve your place
+  </a>
 </div>
 </div>
 </div>
 </section>
 </main>
-<a aria-label="Contact Japandi Retreats on WhatsApp" class="whatsapp-float" href="https://wa.me/31615230319" rel="noopener" target="_blank" title="WhatsApp">
-<svg aria-hidden="true" focusable="false" height="24" viewbox="0 0 24 24" width="24">
-<path d="M12 3a8 8 0 0 0-6.8 12.2L4 21l5.9-1.1A8 8 0 1 0 12 3Zm0 2a6 6 0 1 1-1.6 11.8l-.4-.1-3.4.6.7-3.3-.2-.4A6 6 0 0 1 12 5Z" fill="currentColor"></path>
-</svg>
-</a>
+
 <footer class="footer">
 <div class="container">
 <div class="footerInner">
